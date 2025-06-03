@@ -1,0 +1,169 @@
+:root {
+    --primary-color: #4285F4;
+    --primary-dark: #3367D6;
+    --error-color: #EA4335;
+    --text-color: #202124;
+    --text-light: #5F6368;
+    --bg-color: #FFFFFF;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.login-card {
+    background: var(--bg-color);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.logo {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Google Login Button */
+.btn-google {
+    background: white;
+    color: var(--text-light);
+    border: 1px solid #DADCE0;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.btn-google img {
+    width: 20px;
+    margin-right: 12px;
+}
+
+.login-disclaimer {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+/* Divider */
+.divider {
+    margin: 1.5rem 0;
+    position: relative;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #ddd;
+    z-index: -1;
+}
+
+.divider span {
+    background: white;
+    padding: 0 10px;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: var(--text-light);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -10px;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: 0.3s;
+}
+
+.input-group input:focus ~ .underline {
+    width: 100%;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.signup-prompt {
+    margin-top: 1.5rem;
+    color: var(--text-light);
+}
+
+.signup-prompt a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}

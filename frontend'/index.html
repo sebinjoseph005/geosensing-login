@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geosensing - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo-container">
+                <img src="assets/images/logo.png" alt="Geosensing Logo" class="logo">
+                <h1>Geosensing</h1>
+            </div>
+            
+            <!-- Google Login (Primary) -->
+            <div class="google-login-section">
+                <button class="btn btn-google">
+                    <img src="assets/images/google-logo.png" width="20" height="20" alt="Google Logo">
+                    Sign in with Google
+                </button>
+                <p class="login-disclaimer">(Recommended for Geosensing services)</p>
+            </div>
+            
+            <div class="divider">
+                <span>or use email</span>
+            </div>
+            
+            <!-- Email Login (Secondary) -->
+            <form id="login-form" class="form">
+                <div class="input-group">
+                    <input type="email" id="login-email" required>
+                    <label for="login-email">Email</label>
+                    <div class="underline"></div>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="login-password" required>
+                    <label for="login-password">Password</label>
+                    <div class="underline"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+            
+            <!-- Signup Link -->
+            <p class="signup-prompt">
+                Don't have an account? <a href="#" id="show-signup">Sign up</a>
+            </p>
+            
+            <!-- Hidden Signup Form -->
+            <form id="signup-form" class="form hidden">
+                <div class="input-group">
+                    <input type="text" id="signup-name" required>
+                    <label for="signup-name">Full Name</label>
+                    <div class="underline"></div>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="signup-email" required>
+                    <label for="signup-email">Email</label>
+                    <div class="underline"></div>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="signup-password" required>
+                    <label for="signup-password">Password</label>
+                    <div class="underline"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
